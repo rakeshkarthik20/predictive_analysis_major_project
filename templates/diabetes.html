@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static\css\diabetes.css">
+    <title>Diabetes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="bg-success">
+        <div id="sectionDiabetes" class="diabetesBg container m-auto">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+                <div class="d-flex flex-row">
+                    <a class="navbar-brand" href="/">
+                        <img class="navbar-image" src="https://res.cloudinary.com/dtbikpook/image/upload/v1658880499/Screenshot_2022-07-27_053719_ieunlr.png" height="50">
+                    </a>
+                    <a class="navbar-brand mt-1" href="/" style="height: 50px;">
+                        <p class="main-heading-pa-info">Predictive_analysis</p>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active text-white pb-3 txt-prop" href="/">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-white pb-3 txt-prop" href="whatpdis">Predictive_analysis?</a>
+                        <a class="nav-link text-white pb-3 txt-prop" href="Diseases">Diseases_Info</a>
+                        <a class="nav-link text-white pb-3 txt-prop" href="feedback">Feedback</a>
+                    </div>
+                </div>
+            </nav>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="d-flex flex-row justify-content-center">
+                <h4><u>Welcome To Diabetes Prediction Website</u></h4>
+            </div>
+            <div class="row d-flex flex-row justify-content-center">
+                <form action="/sub" method="POST">
+                    <br>
+                    <div class="col-12 col-sm-12 d-flex flex-row justify-content-center">
+                        <div>
+                            <h6>Enter pregnancy month:</h6>
+                            <input type="number" step="1" name="pregnancy" placeholder="Enter month no:" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-12 col-sm-12 d-flex flex-row justify-content-center">
+                        <div>
+                            <h6>Enter Glucose Level:</h6>
+                            <input type="number" step="0.001" name="glucose" placeholder="Glucose level:" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-12 col-sm-12 d-flex flex-row justify-content-center">
+                        <div>
+                            <h6>Enter Blood pressure:</h6>
+                            <input type="number" step="0.001" name="bloodpressure" placeholder="Enter BP:" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-12 col-sm-12 d-flex flex-row justify-content-center">
+                        <div>
+                            <h6>Enter SkinThickness:</h6>
+                            <input type="number" step="0.001" name="SkinThickness" placeholder="Enter SkinThickness:" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-12 col-sm-12 d-flex flex-row justify-content-center">
+                        <div>
+                            <h6>Enter Insulin Level:</h6>
+                            <input type="number" step="0.001" name="insulin" placeholder="Enter insulin level:" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-12 col-sm-12 d-flex flex-row justify-content-center">
+                        <div>
+                            <h6>Enter BMI:</h6>
+                            <input type="number" step="0.001" name="BMI" placeholder="Enter BMI:" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-12 col-sm-12 d-flex flex-row justify-content-center">
+                        <div>
+                            <h6>DiabetesPedigreeFunction</h6>
+                            <input type="number" step="0.001" name="DiabetesPedigreeFunction" placeholder="Enter value:" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-12 col-sm-12 d-flex flex-row justify-content-center">
+                        <div>
+                            <h6>Enter Age:</h6>
+                            <input type="number" step="0.001" name="Age" placeholder="Enter age:" required>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="col-12 d-flex flex-row justify-content-center">
+                        <input type="submit">
+                    </div>
+                    <br>
+                    <div class="bg-warning box-change">
+                        <h6>Result May not be 100% accurate</h6>
+                        <h6>If your Prediction Went wrong <br>please mail your input details<br>So we will improve the model</h6>
+                    </div>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function() {
+            // Open submit.html in a new tab
+            window.open('sub.html', '_blank');
+        });
+    </script>
+</body>
+
+</html>
